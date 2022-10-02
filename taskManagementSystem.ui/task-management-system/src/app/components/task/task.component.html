@@ -7,7 +7,6 @@
                     <td>Required Date</td>
                     <td>Description</td>
                     <td>Status</td>
-                    <td>nextActionDate</td>
                     <td>Assigned To</td>
                 </tr>
             </thead>
@@ -17,7 +16,6 @@
                     <td>{{task.requiredDate}}</td>
                     <td>{{task.taskDescription}}</td>
                     <td>{{enumHelper.getTaskStatus(task.taskStatus)}}</td>
-                    <td>{{task.nextActionDate}}</td>
                     <td>{{task.user.userName}}</td>
                 </tr>
             </tbody>
