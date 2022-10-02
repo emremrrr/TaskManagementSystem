@@ -1,0 +1,73 @@
+<div class="row d-flex justify-content-center"> 
+    <div class="offset-md-6">
+        <div class="col-md-6">
+            <table class="table table-borderless" [(ngModel)]="taskDetail">
+                <tbody>
+                    <tr><td>Id :</td><td>{{taskDetail.id}}</td></tr>
+                    <tr><td>requiredDate :</td><td>{{taskDetail.requiredDate}}</td></tr>
+                    <tr><td>taskStatus :</td><td>{{enumHelper.getTaskStatus(taskDetail.taskStatus)}}</td></tr>
+                    <tr><td>taskType :</td><td>{{enumHelper.getTaskType(taskDetail.taskType)}}</td></tr>
+                    <tr><td>nextActionDate :</td><td>{{taskDetail.nextActionDate}}</td></tr>
+                    <tr><td>user :</td><td>{{taskDetail.user.userName}}</td></tr>
+                    <tr><td>taskDescription :</td><td><textarea  class="form-control" disabled>{{taskDetail.taskDescription}}</textarea></td></tr>
+                </tbody>
+            </table>    
+        </div>
+
+
+    </div>
+</div>
+    <div class="">
+        <div class="">
+        <div class="">
+            <h4 class="form-label"> Comments</h4>
+            <input type="text" class="col-md-2" [(ngModel)]="searchText" value="{{searchText}}"><button (click)="search()">Search</button>
+            <button style="float:right" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-plus"></i></button>
+        </div>
+        <hr>
+        <div class="mb-3" *ngFor="let comment of comments">
+            <label  class="form-label"><strong class="mr-2">{{comment?.user?.userName}}</strong></label>
+            <small>   ({{enumHelper.getCommentType(comment.commentType)}})</small>
+            <button class="btn btn-sm" *ngIf="navHelper.userName==comment?.user?.userName"  data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="editComment(comment)"><i class="fa fa-edit"></i></button>
+            <button class="btn btn-xs" *ngIf="navHelper.userName==comment?.user?.userName" (click)="deleteComment(comment.id)"><i class="fa fa-remove"></i></button>
+            <label style="float:right">  -  Reminder date:{{comment?.reminderDate}}</label>
+            <label style="float:right">Created at:{{comment?.created}}</label>
+            <textarea  class="form-control" disabled>{{comment?.commentText}}</textarea>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update Comment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="cancelEdit()"></button>
+      </div>
+      <div class="modal-body">
+        <table class="col-sm-12 col-md-12 tbl tbl-boderless">
+            <tbody>
+                <tr>
+                    <td>Comment Type</td><td><select [(ngModel)]="commentType">
+                        <option selected></option>
+                        <option *ngFor="let c of enumHelper.getCommentTypes()" [ngValue]="c.value">{{c.key}}</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <td>Reminder Date</td><td><input type="datetime-local" class="form-control"[(ngModel)]="reminderDate" value="{{reminderDate}}"></td>
+                </tr>
+                <tr>
+                    <td>Comment Text</td><td><textarea  class="form-control" [(ngModel)]="commentText" >{{commentText}}</textarea></td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="cancelEdit()">Close</button>
+        <button type="button" class="btn btn-primary"  (click)="upsertComment()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

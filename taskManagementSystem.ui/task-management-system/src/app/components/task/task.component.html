@@ -1,0 +1,26 @@
+<div class="row d-flex justify-content-center"> 
+    <div class="">
+        <table class="col-md-10  table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Required Date</td>
+                    <td>Description</td>
+                    <td>Status</td>
+                    <td>nextActionDate</td>
+                    <td>Assigned To</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let task of tasks" style="cursor: pointer" (click)="getTask(task.id)" >
+                    <td>{{task.id}}</td>
+                    <td>{{task.requiredDate}}</td>
+                    <td>{{task.taskDescription}}</td>
+                    <td>{{enumHelper.getTaskStatus(task.taskStatus)}}</td>
+                    <td>{{task.nextActionDate}}</td>
+                    <td>{{task.user.userName}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+</div>
