@@ -1,0 +1,17 @@
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\bin\Debug\net6.0\TaskManagementSystem.Business.deps.json
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\bin\Debug\net6.0\TaskManagementSystem.Business.dll
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\bin\Debug\net6.0\TaskManagementSystem.Business.pdb
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\bin\Debug\net6.0\TaskManagementSystem.Data.dll
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\bin\Debug\net6.0\TaskManagementSystem.Data.pdb
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\TaskManagementSystem.Business.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\TaskManagementSystem.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\TaskManagementSystem.Business.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\TaskManagementSystem.Business.AssemblyInfo.cs
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\TaskManagementSystem.Business.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\TaskManagementSystem.Business.csproj.CopyComplete
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\TaskManagementSystem.Business.dll
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\refint\TaskManagementSystem.Business.dll
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\TaskManagementSystem.Business.pdb
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\obj\Debug\net6.0\ref\TaskManagementSystem.Business.dll
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\bin\Debug\net6.0\TaskManagementSystem.Entities.dll
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Business\bin\Debug\net6.0\TaskManagementSystem.Entities.pdb

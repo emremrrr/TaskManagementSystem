@@ -1,0 +1,12 @@
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\bin\Debug\net6.0\TaskManagementSystem.Entities.deps.json
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\bin\Debug\net6.0\TaskManagementSystem.Entities.dll
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\bin\Debug\net6.0\TaskManagementSystem.Entities.pdb
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\obj\Debug\net6.0\TaskManagementSystem.Entities.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\obj\Debug\net6.0\TaskManagementSystem.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\obj\Debug\net6.0\TaskManagementSystem.Entities.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\obj\Debug\net6.0\TaskManagementSystem.Entities.AssemblyInfo.cs
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\obj\Debug\net6.0\TaskManagementSystem.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\obj\Debug\net6.0\TaskManagementSystem.Entities.dll
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\obj\Debug\net6.0\refint\TaskManagementSystem.Entities.dll
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\obj\Debug\net6.0\TaskManagementSystem.Entities.pdb
+C:\Users\Dell\source\repos\TaskManagementSystem\TaskManagementSystem.Entities\obj\Debug\net6.0\ref\TaskManagementSystem.Entities.dll
