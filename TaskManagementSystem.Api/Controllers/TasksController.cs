@@ -8,6 +8,8 @@ namespace TaskManagementSystem.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
+
     public class TasksController : ControllerBase
     {
         private readonly ITaskManager _taskManager;
