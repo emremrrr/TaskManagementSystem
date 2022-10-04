@@ -15,7 +15,30 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddCors(options =>
      options.AddDefaultPolicy(builder =>
      builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Web Api", Version = "v1" });
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "Append 'bearer' prefix and leave a space then paste the token.",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                    {
+                        new OpenApiSecurityScheme()
+                        {
+                            Reference=new OpenApiReference(){Type=ReferenceType.SecurityScheme,Id="Bearer"},
+                            Scheme="oauth2",
+                            Name="Bearer",
+                            In=ParameterLocation.Header
+                        },
+                        new List<string>()
+                    }
+
+                }););
 builder.Services.AddScoped<IDataAccess, DataAccess>();
 builder.Services.AddScoped<ITaskDataAccess, TaskDataAccess>();
 builder.Services.AddScoped<IUserManager,UserManager>();
